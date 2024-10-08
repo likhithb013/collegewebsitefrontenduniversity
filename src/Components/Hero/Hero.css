@@ -1,0 +1,67 @@
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)), url('../../assets/Hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; /* Adds some padding for breathing room */
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px; /* Adds padding to the text block */
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Adds space below the heading */
+    line-height: 1.2; /* Better line-height for readability */
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.6; /* Increased line-height for better readability */
+    font-size: 30px; /* Slightly larger font for better visibility */
+}
+
+/* Example button styling for 'Explore Now' */
+.hero-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px; /* Space above button */
+    cursor: pointer;
+}
+/* ------- media query ------ */
+@media (max-width: 850px){
+    .hero-text h1 {
+        font-size: 40px;
+
+    }
+}
+@media (max-width: 650px){
+    .hero-text h1 {
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+
+
+    }
+    .hero-text p{
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+}

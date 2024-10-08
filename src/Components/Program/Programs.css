@@ -1,0 +1,65 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%;
+    position: relative;
+}
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center; /* Align icon and text vertically to center */
+    justify-content: center; /* Align icon and text horizontally to center */
+    flex-direction: column; /* Stack icon and text */
+    color: #fff;
+    cursor: pointer;
+    opacity: 0; /* Hidden initially */
+    padding: 0; /* No padding initially */
+    transition: opacity 0.4s, padding-top 0.4s; /* Transition for both opacity and padding */
+}
+
+.caption img {
+    width: 40px; /* Adjust icon size */
+    filter: brightness(0) invert(1); /* Change icon color to white */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.caption p {
+    color: white;
+    font-size: 16px; /* Adjust text size */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text below the icon */
+}
+
+.program:hover .caption {
+    opacity: 1; /* Make the caption visible on hover */
+    padding-top: 0; /* Remove the top padding to ensure centered content */
+}
+/* ------- media query ------- */
+@media (max-width: 650px){
+    .programs{
+        flex-direction: column;
+
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+        
+    }
+
+}
